@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Riot | Room Detector</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+      <main>
+        <p class="text">I believe you're in the</p>
+        <h1 class="title" id="predicted-room-name">(I dunno)</h1>
+        <p class="subtitle">with <span id="predicted-confidence">0%</span> confidence</p>
+        <div class="buttons">
+          <a href="add.html" class="button">Add new room</a>
+        </div>
+        <p class="text">Added Rooms</p>
+        <div class="cards">
+        </div>
+      </main>
+      <script>
+      require('../scripts/predict.js')
+      </script>
+    </body>
+  </html>
